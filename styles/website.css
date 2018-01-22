@@ -4,6 +4,11 @@
     background-color: #22292f;
 }
 
+.book-summary ul.summary li.divider {
+    margin: 7px 8px;
+    background-color: ;
+}
+
 .book-summary ul.summary li a, .book-summary ul.summary li span {
     color: #ffffff
 }
@@ -17,7 +22,11 @@
     color: #fd9386;
 }
 
-.gitbook-link {
+.book-summary ul.summary li .gitbook-link {
+    visibility: hidden;
+}
+
+.book-summary ul.summary li .custom-link {
     visibility: hidden;
 }
 
