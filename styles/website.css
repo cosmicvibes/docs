@@ -4,12 +4,17 @@
     background-color: #22292f;
 }
 
-.chapter {
-    color: #ffffff;
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+    color: #ffffff
 }
 
-.active {
+.book-summary ul.summary li.active > a {
     color: #fb503b;
+}
+
+.book-summary ul.summary li a:hover {
+    text-decoration: none;fd9386
+    color: #fd9386;
 }
 
 .gitbook-link {
