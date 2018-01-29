@@ -1,3 +1,3 @@
 # Installation guide
 
-Steps to do
+Coming soon&trade;
