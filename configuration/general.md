@@ -50,20 +50,6 @@ You can turn off certain parts of the monitoring. For example, if your applicati
 ```
 
 
-## Eyewitness database storage connection
-
-Eyewitness will create a number of tables to store data it collects. By default the package will use your normal database connection - but you are able to specifiy a specific connection if required.
-
-This means you can keep the Eyewitness data seperate from your application, and seperates your backups, migrations etc.
-
-To setup a new database specifically for Eyewitness to store information, add a new connection to your `config/database.php`, then include the connection name in the eyewitness configuration:
-
-```diff
-- 'database_connection' => env('EYEWITNESS_DATABASE_CONNECTION', null),
-+ 'database_connection' => 'eyewitness_db',
-```
-
-
 ## Capture cron scheduler output
 
 If your cron schedulers are being monitored, then Eyewitness will capture the output from the cron job by default. This allows you to view the output online at a later stage if needed.
@@ -94,22 +80,25 @@ If your application uses multiple databases, then you can list them below and ea
 
 The array should contain names corresponding to one of the connections listed in your `config/database.php` configuration file. Each database can contain alerts for the size of the database. You can disable size alerts by setting their value to `0`.
 
-*Note:* a null value will simply use the "default" connection - which is sufficient for most applications.
+*Note:* an empty array value will simply use the "default" connection - which is sufficient for most applications.
 
-```
-'database_connections' => [
-    [
-        'connection' => 'mysql',
-        'alert_greater_than_mb' => 500,
-        'alert_less_than_mb' => 200,
-    ]
-],
+```diff
+- 'database_connections' => []
++ 'database_connections' =>
++ [
++     [
++         'connection' => 'mysql',
++         'alert_greater_than_mb' => 500,
++         'alert_less_than_mb' => 200,
++     ]
++ ],
 ```
 
 You can monitor multiple database connections as well:
 
 ```
-'database_connections' => [
+'database_connections' =>
+[
     [
         'connection' => 'mysql',
         'alert_greater_than_mb' => 500,
@@ -133,6 +122,20 @@ You can change the location of your `composer.lock` file. You only need to modif
 ```diff
 - 'composer_lock_file_location' => base_path('composer.lock'),
 + 'composer_lock_file_location' => '/path/to/composer.lock',`
+```
+
+
+## Eyewitness database storage connection
+
+Eyewitness will create a number of tables to store data it collects. By default the package will use your normal database connection - but you are able to specifiy a specific connection if required.
+
+This means you can keep the Eyewitness data seperate from your application, and seperates your backups, migrations etc.
+
+To setup a new database specifically for Eyewitness to store information, add a new connection to your `config/database.php`, then include the connection name in the eyewitness configuration:
+
+```diff
+- 'eyewitness_database_connection' => env('EYEWITNESS_DATABASE_CONNECTION', null),
++ 'eyewitness_database_connection' => 'eyewitness_db',
 ```
 
 

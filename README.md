@@ -1,4 +1,4 @@
-<p align="center"><a href="https://eyewitness.io" target="_blank"><img width="200" src="https://eyewitness.io/img/logo/package.png"></a></p>
+<p align="center"><a href="https://eyewitness.io" target="_blank"><img width="200" src="https://eyewitness.io/assets/images/package.png"></a></p>
 
 # Eyewitness.io
 

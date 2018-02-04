@@ -2,9 +2,9 @@
 
 ## 1. Install via composer
 
-Add the package to your `composer.json` file
+Add the **beta** package to your `composer.json` file
 
-    composer require eyewitness/eye
+    composer require eyewitness/eye dev-beta
 
 
 ## 2. Add to providers (Laravel 5.4 or below)
