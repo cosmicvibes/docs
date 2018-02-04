@@ -14,12 +14,14 @@ In the event a change to your DNS is detected, Eyewitness will send you a notifi
 
 ## Configuring domains
 
-You can read more about configuring your monitored DNS domains [here](configuration\general.md#dns)
+You can read more about configuring your monitored DNS domains [here](\configuration\general.md#domains)
 
 
 ## Disabling DNS monitor
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:
 
-    - 'monitor_dns' => true,
-    + 'monitor_dns' => false,
+```diff
+- 'monitor_dns' => true,
++ 'monitor_dns' => false,
+```

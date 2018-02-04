@@ -59,7 +59,9 @@ Jobs that appear in your Scheduler list as `Unnamed Clourse` - then you should a
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:
 
-    - 'monitor_scheduler' => true,
-    + 'monitor_scheduler' => false,
+```diff
+- 'monitor_scheduler' => true,
++ 'monitor_scheduler' => false,
+```
 
 *note*: Even if you disable the scheduler monitor - you must still run the scheduler for Eyewitness to be able to monitor the other parts of your application.

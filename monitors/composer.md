@@ -29,5 +29,7 @@ You can read more about configuring your `composer.lock` location [here](configu
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:
 
-    - 'monitor_composer' => true,
-    + 'monitor_composer' => false,
+```diff
+- 'monitor_composer' => true,
++ 'monitor_composer' => false,
+```

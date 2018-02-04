@@ -1,8 +1,6 @@
 # Database monitor
 
-As everyone would know - you should **never** enable `debug` mode on your production server. Doing so puts your application at significant risk of compromise.
-
-Eyewitness automatically monitors your application to make sure debug mode is never enabled on your production server.
+Eyewitness can keep an eye on your various application databases to ensure they are available at all times. This is especially important if your database sits on a different server than your application, as sometimes network or server problems can take the database offline (which your web application stays online).
 
 
 ## Notifications
@@ -32,12 +30,14 @@ If a database that previously had size problems (small or large) - but they are 
 
 ## Configuration
 
-You can read more about configuring your `composer.lock` location [here](configuration\general.md#database)
+You can read more about configuring your `composer.lock` location [here](configuration\general.md#databases)
 
 
 ## Disabling database monitor
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:
 
-    - 'monitor_database' => true,
-    + 'monitor_database' => false,
+```diff
+- 'monitor_database' => true,
++ 'monitor_database' => false,
+```

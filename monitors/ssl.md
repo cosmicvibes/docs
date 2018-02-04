@@ -34,7 +34,7 @@ If your score drops suddenly, you should investigate further, as it may be an ea
 
 ## Configuring domains
 
-You can read more about configuring your monitored SSL domains [here](\configuration\general.md)
+You can read more about configuring your monitored SSL domains [here](\configuration\general.md#domains)
 
 
 ## Disabling SSL monitor
