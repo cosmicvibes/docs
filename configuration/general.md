@@ -9,23 +9,30 @@ All changes below are relating to `config/eyewitness.php`
 
 By default the eyewitness package is available at `www.yourdomain.com/eyewitness`. You are able to change the base URI of `eyewitness` to anything else you like. This might be to prevent clashes, or to provide obscurity of information.
 
-    `'base_url' => 'other/example',`
+    'base_url' => 'other/example',
 
 
 ## Eyewitness helper
 
 Throughout the package we will display introductory/helper information on each page to help you navigate your way around. Once you are familar with Eyewitness you can choose to turn these off.
 
-    - 'display_helpers' => true,
-    + 'display_helpers' => false,
+    'display_helpers' => false,
 
 
 ## Eyewitness history
 
 You can configure the length of time that Eyewitness keeps local history relating to your queues, cron schedulers etc. By default this is set to 45 days. You are welcome to change this to a longer or shorter to suit your needs.
 
+```diff
+- 'days_to_keep_history' => 45,
++ 'days_to_keep_history' => 30,
+```
+
+
+    ```diff
     - 'days_to_keep_history' => 45,
     + 'days_to_keep_history' => 30,
+    ```
 
 
 ## Configure standard monitoring modules
