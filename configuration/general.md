@@ -9,8 +9,7 @@ All changes below are relating to `config/eyewitness.php`
 
 By default the eyewitness package is available at `www.yourdomain.com/eyewitness`. You are able to change the base URI of `eyewitness` to anything else you like. This might be to prevent clashes, or to provide obscurity of information.
 
-    - 'base_url' => 'eyewitness',
-    + 'base_url' => 'other/example',
+    `'base_url' => 'other/example',`
 
 
 ## Eyewitness helper
