@@ -22,4 +22,4 @@ Eyewitness is under active development. We are continually working on new featur
 
 ## Feedback
 
-Have an idea? Want a specific feature included? We are always listening to feedback and ideas. Simply get in touch anytime through the chat feature on https://eyewintess.io, or email us at feedback@eyewitness.io - we'd love to hear from you.
+Have an idea? Want a specific feature included? We are always listening to feedback and ideas. Simply get in touch anytime through the chat feature on https://eyewintess.io, or email us at <b>feedback@eyewitness.io</b> - we'd love to hear from you.

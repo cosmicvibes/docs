@@ -60,7 +60,7 @@ To setup a new database specifically for Eyewitness to store information, add a 
 
 ```diff
 - 'database_connection' => env('EYEWITNESS_DATABASE_CONNECTION', null),
-+ 'database_connection' => 'eyewitness_db,
++ 'database_connection' => 'eyewitness_db',
 ```
 
 
