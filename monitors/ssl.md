@@ -34,12 +34,14 @@ If your score drops suddenly, you should investigate further, as it may be an ea
 
 ## Configuring domains
 
-You can read more about configuring your monitored SSL domains [here](configuration\general.md#ssl)
+You can read more about configuring your monitored SSL domains [here](\configuration\general.md)
 
 
 ## Disabling SSL monitor
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:
 
-    - 'monitor_ssl' => true,
-    + 'monitor_ssl' => false,
+```diff
+- 'monitor_ssl' => true,
++ 'monitor_ssl' => false,
+```
