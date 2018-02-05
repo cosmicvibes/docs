@@ -139,6 +139,16 @@ To setup a new database specifically for Eyewitness to store information, add a 
 ```
 
 
+## Web route middleware
+
+You can set what route middleware Eyewitness should use. On most applications it will be the default `web` middleware name, but if you use a custom name you will need to set it here first.
+
+```diff
+- 'route_middleware' => 'web',
++ 'route_middleware' => 'front',
+```
+
+
 ## API Proxy
 
 If your application is behind a firewall that requires a proxy to gain access - you can add the proxy details to the config file. This proxy array will be directly passed to Guzzle as a header option, so please refer to the Guzzle documentation on how to configure the proxy headers for your application.
