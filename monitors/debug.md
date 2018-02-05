@@ -11,7 +11,7 @@ The debug monitor will only send out one of two alerts:
 
 ### Enabled
 
-If Eyewitness detects `debug` mode has been enabled on your produciton server - it will send out an immediate alert.
+If Eyewitness detects `debug` mode has been enabled on your production server - it will send out an immediate alert.
 
 ### Disabled
 

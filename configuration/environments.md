@@ -7,7 +7,7 @@ Eyewitness will intelligently detect the current environment of your application
 
 When your application is running in Local and Testing environment, no notifications will be sent by the package.
 
-This is to ensure that you dont send out false alerts your database was just destroyed, sending your operations team into a panic. At the moment this cannot be overriden by any configuration option.
+This is to ensure that you dont send out false alerts your database was just destroyed, sending your operations team into a panic. At the moment this cannot be overridden by any configuration option.
 
 
 ## All other environments

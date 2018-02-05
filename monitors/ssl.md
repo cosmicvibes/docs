@@ -25,11 +25,11 @@ If your certificate has been revoked (for any reason), Eyewitness will send out 
 
 ### Grade Change
 
-One of the great features provided by [www.htbridge.com](https://https://www.htbridge.com/ssl/) is a "grade" (or score) for your SSL configuration. This grade can be used to not only ensure your certificate is valid, but that it is configured properly. This includes when new vunerabilities are found in the future, your configuration might need updating.
+One of the great features provided by [www.htbridge.com](https://https://www.htbridge.com/ssl/) is a "grade" (or score) for your SSL configuration. This grade can be used to not only ensure your certificate is valid, but that it is configured properly. This includes when new vulnerabilities are found in the future, your configuration might need updating.
 
 A score ranges from A+ all the way down to F. In the event your SSL certificate score changes, you will be notified. You are able to look at your score on the Eyewitness dashboard, and there will always be a link to the [www.htbridge.com](https://https://www.htbridge.com/ssl/) API with the full results report page.
 
-If your score drops suddenly, you should investigate further, as it may be an early sign of a server error, or of a new public vunerability that your application is exposed to.
+If your score drops suddenly, you should investigate further, as it may be an early sign of a server error, or of a new public vulnerability that your application is exposed to.
 
 
 ## Configuring domains

@@ -11,11 +11,11 @@ You are able to choose from a number of different notification drivers, such as 
 
 Each recipient is also given the option which message severity notices they will receive. See below for more information.
 
-By combining severity options with recipients, you can make inteliigent alerting. For example, you might set an "email" recipient to receive low, medium and high alerts. But then you set a "pushover" and "SMS" recipient for "high" alerts only.
+By combining severity options with recipients, you can make intelligent alerting. For example, you might set an "email" recipient to receive low, medium and high alerts. But then you set a "pushover" and "SMS" recipient for "high" alerts only.
 
 ### Test Message
 
-Once you have configured your recipient(s) - you able send a `Test Message` notification to ensure the recipient is configured correctly and able to recieve alerts from Eyewitness. Simply click the hamburger icon on the far right of the recipient, and click "send test".
+Once you have configured your recipient(s) - you able send a `Test Message` notification to ensure the recipient is configured correctly and able to receive alerts from Eyewitness. Simply click the hamburger icon on the far right of the recipient, and click "send test".
 
 
 ## Message severity

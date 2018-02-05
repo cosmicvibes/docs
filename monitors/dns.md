@@ -1,6 +1,6 @@
 # DNS monitor
 
-Using your configured domains, Eyewitness will keep an eye on your DNS configuration. In the event any changes are detected, you will be alerted. This can be useful in case of unauthorised changes (including a hack of your DNS provider), or against accidential changes.
+Using your configured domains, Eyewitness will keep an eye on your DNS configuration. In the event any changes are detected, you will be alerted. This can be useful in case of unauthorised changes (including a hack of your DNS provider), or against accidental changes.
 
 
 ## Notifications

@@ -2,7 +2,7 @@
 
 Custom monitors are super powerful, and one of the most exciting features of Eyewitness.
 
-You can create *fully* integrated monitors into Eyewitness, which are seemless and act and appear as if they are one of the standard monitors. This means Eyewitness can grow with you and your application, to monitor literally anything you can think of.
+You can create *fully* integrated monitors into Eyewitness, which are seamless and act and appear as if they are one of the standard monitors. This means Eyewitness can grow with you and your application, to monitor literally anything you can think of.
 
 All you need is to write a small PHP script of what you want to monitor, and Eyewitness will handle everything else, including sending notifications and tracking the trend of the job over time.
 
@@ -10,7 +10,7 @@ We've tried to make custom monitors as simple as possible out of the box, but if
 
 ## How to make
 
-Lets say you want to make a monitor, to check if a 3rd party API is online. Lets use `Spotify` as an example.
+Let's say you want to make a monitor, to check if a 3rd party API is online. Let's use `Spotify` as an example.
 
 ### 1. Create a monitor using our new built in `make` command:
 
@@ -63,7 +63,7 @@ public function run()
 
 ### 6. Track the monitor value (optional)
 
-Sometimes just knowing if a monitor is "up" or "down" is not enough. Using our Spotify example, lets assume we also want to try the time the API took to respond. This can be useful to display on a graph over time, which Eyewitness will handle for you automatically.
+Sometimes just knowing if a monitor is "up" or "down" is not enough. Using our Spotify example, let's assume we also want to try the time the API took to respond. This can be useful to display on a graph over time, which Eyewitness will handle for you automatically.
 
 To include a value in your monitor - simply include the following somewhere inside of your `run()` command:
 
@@ -76,7 +76,7 @@ We've used `5` as an example here - but you can place any `numeric` number there
 
 ## Registering a custom monitor to Eyewitness
 
-So you've made a custom monitor. Lets use the `Spotify` example from above.
+So you've made a custom monitor. Let's use the `Spotify` example from above.
 
 To add it simply modify your `config/eyewitness.php` file like this:
 
@@ -123,7 +123,7 @@ You can hook into the lifecycle when your monitor is switching health status for
 If your custom witness fails for the first time (i.e. switches from a healthy status to a sick status) - you can add some additional code you want to run. *Remember: Eyewitness will automatically notify you, so you do not need to duplicate that functionality.*
 
 ```diff
-* /**
++ /**
 +  * @return void
 +  */
 + public function failing()
@@ -137,7 +137,7 @@ If your custom witness fails for the first time (i.e. switches from a healthy st
 If your custom witness recovers for the first time (i.e. switches from a sick status to a healthy status) - you can add some additional code you want to run. *Remember: Eyewitness will automatically notify you, so you do not need to duplicate that functionality.*
 
 ```diff
-* /**
++ /**
 +  * @return void
 +  */
 + public function recovering()
@@ -148,6 +148,6 @@ If your custom witness recovers for the first time (i.e. switches from a sick st
 
 ## Share the love
 
-Got a new custom monitor your wrote? Interested in sharing it to other users of Eyewitness?
+Got a new custom monitor you wrote? Interested in sharing it to other users of Eyewitness?
 
 We are in the early stages of adding a free marketplace area of example custom monitors. Tweet a gist, or email us a copy at "feedback@eyewitness.io", and we'll add it to the growing list (your name and credit will be included of course).

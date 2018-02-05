@@ -17,7 +17,7 @@ By default the eyewitness package is available at `www.yourdomain.com/eyewitness
 
 ## Eyewitness helper
 
-Throughout the package we will display introductory/helper information on each page to help you navigate your way around. Once you are familar with Eyewitness you can choose to turn these off.
+Throughout the package we will display introductory/helper information on each page to help you navigate your way around. Once you are familiar with Eyewitness you can choose to turn these off.
 
 ```diff
 - 'display_helpers' => true,
@@ -54,7 +54,7 @@ You can turn off certain parts of the monitoring. For example, if your applicati
 
 If your cron schedulers are being monitored, then Eyewitness will capture the output from the cron job by default. This allows you to view the output online at a later stage if needed.
 
-If you set this to false, no cron output will not be captured or stored.
+If you set this too false, no cron output will not be captured or stored.
 
 ```diff
 - 'capture_cron_output' => env('EYEWITNESS_CAPTURE_CRON_OUTPUT', true),
@@ -127,9 +127,9 @@ You can change the location of your `composer.lock` file. You only need to modif
 
 ## Eyewitness database storage connection
 
-Eyewitness will create a number of tables to store data it collects. By default the package will use your normal database connection - but you are able to specifiy a specific connection if required.
+Eyewitness will create a number of tables to store data it collects. By default the package will use your normal database connection - but you are able to specify a specific connection if required.
 
-This means you can keep the Eyewitness data seperate from your application, and seperates your backups, migrations etc.
+This means you can keep the Eyewitness data separate from your application, and separates your backups, migrations etc.
 
 To setup a new database specifically for Eyewitness to store information, add a new connection to your `config/database.php`, then include the connection name in the eyewitness configuration:
 

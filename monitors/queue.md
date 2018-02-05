@@ -54,7 +54,7 @@ If you queue was previously unhealthy due to too long waiting jobs, we will aler
 
 ## Laravel Horizon
 
-Laravel Horizon is the amazing Redis queue management package put together by Taylor Otwell. Currently Eyewitness is not compatbile with Horizon - but integration is coming shortly. In the meantime if you are already running Horizon, you can simply disable the Eyewitness queue monitor.
+Laravel Horizon is the amazing Redis queue management package put together by Taylor Otwell. Currently Eyewitness is not directly compatible with Horizon - but integration is coming shortly. In the meantime if you are already running Horizon, you can simply disable the Eyewitness queue monitor and they will happily exist side by side.
 
 In the near future you will be able to have Horizon "power" your queues, and Eyewitness can report on what Horizon is doing from a single interface. Contact us if you would like to assist in the beta testing of this feature soon: support@eyewitness.io.
 

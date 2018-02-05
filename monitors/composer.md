@@ -17,7 +17,7 @@ In the event an issue with your composer file is detected, a `Risk` notification
 
 ### Safe
 
-Once your `composer.lock` file is fixed and no longer contains any know vunerabilities, a `Safe` notification will be sent to confirm everything is ok now.
+Once your `composer.lock` file is fixed and no longer contains any know vulnerabilities, a `Safe` notification will be sent to confirm everything is ok now.
 
 
 ## Configuration

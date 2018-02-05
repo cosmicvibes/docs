@@ -4,9 +4,10 @@ Eyewitness is under active development. We are continually working on new featur
 
 ## Currently in development
 
-- Support for seemless Laravel Horizon integration
 - Database replication monitor
+- Support for seamless Laravel Horizon integration
 - Long query monitor
+- Server monitor (CPU, Disk, Memory)
 - Lumen support
 
 

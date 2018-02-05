@@ -12,7 +12,7 @@
  * [General](configuration\general.md)
  * [Environments](configuration\environments.md)
  * [Notifications](configuration\notifications.md)
- * [Load balanced applications](configuration\loadbalanced.md)
+ * [Load balanced](configuration\loadbalanced.md)
 
 ### Monitors
  * [Composer](monitors\composer.md)

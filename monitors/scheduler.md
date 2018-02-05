@@ -22,11 +22,11 @@ Eyewitness knows when each scheduled job *should* run. In the event a job does n
 
 ### Overdue
 
-If a cron job starts to execute, but takes a long time and never sends a signal that it has completed, an Overdue notification will be sent out. There are two possibilites here;
+If a cron job starts to execute, but takes a long time and never sends a signal that it has completed, an `Overdue` notification will be sent out. There are two possibilities here;
 
 The first possibility is the job failed, but in a way that it never notified Laravel of the problem. This is rare, but could occur (such as during a server reboot).
 
-The second possibiltiy is the job is still actually running, but has significatnly exceed all expectations. Unfortunately it is not easy to determine if that has occured - but your logs might give an indication of any problems. If the job does eventually complete, you will be notified. If this becomes a regular occurance - you can set the `slow` notification time to be larger, as this is used to help guide the expectations of how long a job might run for.
+The second possibility is the job is still actually running, but has significantly exceeded all expectations. Unfortunately it is not easy to determine if that has occurred - but your logs might give an indication of any problems. If the job does eventually complete, you will be notified. If this becomes a regular occurrence - you can set the `slow` notification time to be larger, as this is used to help guide the expectations of how long a job might run for.
 
 ### Fast
 
@@ -45,14 +45,14 @@ Once a scheduled cron job that was previously failing is now working again, you 
 
 A safety feature of Eyewitness is any changes to a scheduled cron job will not remove the old configuration. It will instead duplicate the scheduled job to its own monitor, leaving the old monitor to eventually "fail" when it is not run.
 
-This is a very intended safety feature. The reason is to ensure you do not accidentilly remove or change a scheduled job you did not intend for. For example, can you imagine if you accidentilly changed your daily backup to be a yearly backup by mistake? With Eyewitness, you would know this has occured.
+This is a very intended safety feature. The reason is to ensure you do not accidentally remove or change a scheduled job you did not intend for. For example, can you imagine if you accidentally changed your daily backup to be a yearly backup by mistake? With Eyewitness, you would know this has occurred.
 
 
 ## "Unnamed Closure" cron jobs
 
 In order to be able to identify each scheduler cron job as it is running, Eyewitness uses the Laravel computed `mutex`. Each mutex is unique, but requires a description or name to be generated. Typically all schedule jobs have this, however if you are running a `Closure` based schedule command - you might need to manually add a name to the job to allow Eyewitness to identify it.
 
-Jobs that appear in your Scheduler list as `Unnamed Clourse` - then you should add a `->name('example')` to the end of your schedule job. Each name should be unique, and will be used to identify that specific closure job.
+Jobs that appear in your Scheduler list as `Unnamed Closure` - then you should add a `->name('example')` to the end of your schedule job. Each name should be unique, and will be used to identify that specific closure job.
 
 
 ## Disabling Scheduler monitor
