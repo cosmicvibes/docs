@@ -7,6 +7,7 @@ In order to run Eyewitness you require:
 - Laravel 5.1 or higher
 - PHP 5.6 or higher
 - A database (any type)
+- Cache (any type)
 
 
 ## Scheduler
