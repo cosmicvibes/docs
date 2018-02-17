@@ -11,6 +11,7 @@
 ### Configuration
  * [General](configuration\general.md)
  * [Environments](configuration\environments.md)
+ * [Authentication](configuration\authentication.md)
  * [Notifications](configuration\notifications.md)
  * [Load balanced](configuration\loadbalanced.md)
 
