@@ -67,8 +67,13 @@ If you set this too false, no cron output will not be captured or stored.
 You are able to configure domain(s) for Eyewitness to monitor both the SSL and DNS. You can monitor one or multiple domains for the one application (this can be useful for subdomain monitoring). You must use the full domain name that will pass a PHP [FILTER_VALIDATE_URL](http://php.net/manual/en/filter.filters.validate.php)
 
 ```diff
-- 'application_domains' => [],
-+ 'application_domains' => ['https://www.yourdomain.com', 'https://subdomain.yourdomain.com'],
+- 'application_domains' => [
+-    env('APP_URL'),
+- ],
++ 'application_domains' => [
++     'https://www.yourdomain.com',
++     'https://subdomain.yourdomain.com'
++ ],
 ```
 
 
