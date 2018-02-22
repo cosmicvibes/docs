@@ -142,7 +142,7 @@ To setup a new database specifically for Eyewitness to store information, add a 
 ```
 
 
-## Enable scheduler background tasks
+## Disable scheduler background tasks
 
 This should only be changed if you run Laravel & Eyewitness on a Windows server and experience issues with your schedules not running correctly. This is caused by some inconsistencies in how Window servers handles background processes. Only in this specific situation should you make the following change.
 
