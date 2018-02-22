@@ -1,9 +1,15 @@
 # Changelog
 
+## 3.0.0-beta4 - 22nd Feburary 2018
+
+### Added
+- New option for disabling default login ([see docs](configuration\authentication.md)) ([#c95b0d8](https://github.com/eyewitness/eye/commit/c95b0d8488d7fffec1f0ea112a7f66a80daa7416))
+
+
 ## 3.0.0-beta3 - 17th Feburary 2018
 
 ### Added
-- New option for custom authentication ([see docs](configuration\authentication.md)) ([#939e9fc](https://github.com/eyewitness/eye/commit/939e9fcd7e963face3bcf91c6f1e053c39b8a1d))
+- New option for callback authentication ([see docs](configuration\authentication.md)) ([#939e9fc](https://github.com/eyewitness/eye/commit/939e9fcd7e963face3bcf91c6f1e053c39b8a1d))
 
 ## 3.0.0-beta2 - 14th Feburary 2018
 
