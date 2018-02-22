@@ -2,6 +2,9 @@
 
 ## 3.0.0-beta4 - 22nd Feburary 2018
 
+### Fixed
+- Fixed scheduler option for Windows servers ([see docs](configuration\general.md#eyewitness-scheduler-background-tasks)) ([#f4fa90d](https://github.com/eyewitness/eye/commit/f4fa90dc976c410475580fbb6da8f5873782496f))
+
 ### Added
 - New option for disabling default login ([see docs](configuration\authentication.md)) ([#c95b0d8](https://github.com/eyewitness/eye/commit/c95b0d8488d7fffec1f0ea112a7f66a80daa7416))
 

@@ -55,6 +55,11 @@ In order to be able to identify each scheduler cron job as it is running, Eyewit
 Jobs that appear in your Scheduler list as `Unnamed Closure` - then you should add a `->name('example')` to the end of your schedule job. Each name should be unique, and will be used to identify that specific closure job.
 
 
+## Windows Servers
+
+If you are running Laravel & Eyewitness on a Windows server, you should consider disable the running of scheduled taskins in the background. You can read more about it [here](\configuration\general.md#scheduler-background).
+
+
 ## Disabling Scheduler monitor
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:

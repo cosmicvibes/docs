@@ -142,6 +142,18 @@ To setup a new database specifically for Eyewitness to store information, add a 
 ```
 
 
+## Enable scheduler background tasks
+
+This should only be changed if you run Laravel & Eyewitness on a Windows server and experience issues with your schedules not running correctly. This is caused by some inconsistencies in how Window servers handles background processes. Only in this specific situation should you make the following change.
+
+<em>Note:</em> This only affects Eyewitness scheduled process. Changing this value has no effect on the rest of your applications scheduled tasks.
+
+```diff
+- 'enable_scheduler_background' => true,
++ 'enable_scheduler_background' => false,
+```
+
+
 ## Web route middleware
 
 You can set what route middleware Eyewitness should use. On most applications it will be the default `web` middleware name, but if you use a custom name you will need to set it here first.
