@@ -7,6 +7,7 @@
 
 ### Added
 - New option for disabling default login ([see docs](configuration\authentication.md)) ([#c95b0d8](https://github.com/eyewitness/eye/commit/c95b0d8488d7fffec1f0ea112a7f66a80daa7416))
+- Added debug page for better remote support ([#953df48](https://github.com/eyewitness/eye/commit/953df48483ecffd8bcb8c8d85c6295412191b70d))
 
 
 ## 3.0.0-beta3 - 17th Feburary 2018
