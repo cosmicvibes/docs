@@ -3,6 +3,7 @@
 ## 3.0.0-beta4 - 11th March 2018
 
 ### Fixed
+- Make SSL checks more resilient to API failures ([#cdbc598](https://github.com/eyewitness/eye/commit/cdbc598693428a8652a179f5ea33a1efe458fa43))
 - Make queue connections more resilient to config errors ([#6602a84](https://github.com/eyewitness/eye/commit/6602a84b12769edca90b6e5781bb3cb71b4894a7))
 - Fixed relationship on hasOne causing timeouts ([#0df3eb8](https://github.com/eyewitness/eye/commit/0df3eb83bb8d88158486f2973b701951c4c55aca))
 
