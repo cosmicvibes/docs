@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.0-beta5 - 19th March 2018
+
+### Fixed
+- Provide better backward support for Laravel 5.1 and Laravel 5.2 ([#02f5ad4](https://github.com/eyewitness/eye/commit/02f5ad4b7c6a70f322897e4f91f62fc981669307))
+- Fix a race condition on scheduler working notifications ([#feef36d](https://github.com/eyewitness/eye/commit/feef36d82c0a2cde37bedcf667f7f8ec2bacde56))
+- Improve resilience of failed queue payload decoding ([#0fc61e4](https://github.com/eyewitness/eye/commit/0fc61e489481daf57c7979e861497cfe86eb85e9))
+
+
 ## 3.0.0-beta4 - 11th March 2018
 
 ### Fixed
