@@ -6,6 +6,7 @@
 
 ### Added
 - New optional for schedulers, to allow for a window of time for them to run ([see docs](monitors\scheduler.md#conditional-schedules)) ([#3e5aec1](https://github.com/eyewitness/eye/commit/3e5aec1b5c1268582339c384f5e97dfa4be688c6))
+- Scheduler history is now paginated for large lists ([#57b1e05](https://github.com/eyewitness/eye/commit/57b1e05ceecb79cad9a002fa7e2c8803db53991b))
 
 ### Changed
 - Remove unused Queue history loading ([#65289a2](https://github.com/eyewitness/eye/commit/65289a2760710405cd9f327a31dfc7c3e4f294ab))

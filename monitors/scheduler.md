@@ -71,7 +71,7 @@ Since these scheduled jobs will not *always* run - you can take advantage of fea
 
 ## Windows Servers
 
-If you are running Laravel & Eyewitness on a Windows server, you should consider disable the running of scheduled taskins in the background. You can read more about it [here](\configuration\general.md#scheduler-background).
+If you are running Laravel & Eyewitness on a Windows server, you should consider disable the running of scheduled tasks in the background. You can read more about it [here](\configuration\general.md#scheduler-background).
 
 
 ## Disabling Scheduler monitor
