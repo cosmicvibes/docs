@@ -1,5 +1,20 @@
 # Changelog
 
+## 3.0.0-beta6 - 12th May 2018
+
+### If you are using a previous version of the Eyewitness beta - you must run `php artisan migrate` for this patch to update a table
+
+### Added
+- New optional for schedulers, to allow for a window of time for them to run ([see docs](monitors\scheduler.md#conditional-schedules)) ([#3e5aec1](https://github.com/eyewitness/eye/commit/3e5aec1b5c1268582339c384f5e97dfa4be688c6))
+
+### Changed
+- Remove unused Queue history loading ([#65289a2](https://github.com/eyewitness/eye/commit/65289a2760710405cd9f327a31dfc7c3e4f294ab))
+- Refactor the Scheduler history to be more efficient ([#8f4fb5d](https://github.com/eyewitness/eye/commit/8f4fb5dae833dcc620ae67b75f4c4359963192d2))
+
+### Fixed
+- Fix failing Overdue message errors ([PR #33](https://github.com/eyewitness/eye/pull/33))
+
+
 ## 3.0.0-beta5 - 19th March 2018
 
 ### Fixed

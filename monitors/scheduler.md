@@ -55,6 +55,20 @@ In order to be able to identify each scheduler cron job as it is running, Eyewit
 Jobs that appear in your Scheduler list as `Unnamed Closure` - then you should add a `->name('example')` to the end of your schedule job. Each name should be unique, and will be used to identify that specific closure job.
 
 
+## Conditional schedules
+
+Sometimes you might have a conditional schedule - such as
+
+```
+$schedule->job(new SendNotificationEmails)
+            ->everyMinute()
+            ->when(...);
+});
+```
+
+Since these scheduled jobs will not *always* run - you can take advantage of feature to check if runs *at least once* within a given timeframe. Using the "Alert if job has never run in a given timeframe" Eyewitness will send you an alert if the job has not run in that given window.
+
+
 ## Windows Servers
 
 If you are running Laravel & Eyewitness on a Windows server, you should consider disable the running of scheduled taskins in the background. You can read more about it [here](\configuration\general.md#scheduler-background).
