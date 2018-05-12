@@ -2,7 +2,7 @@
 
 ## 3.0.0-beta6 - 12th May 2018
 
-### If you are using a previous version of the Eyewitness beta - you must run `php artisan migrate` for this patch to update a table
+***If you are using a previous version of the Eyewitness beta - you must run `php artisan migrate` for this patch to update a table***
 
 ### Added
 - New optional for schedulers, to allow for a window of time for them to run ([see docs](monitors\scheduler.md#conditional-schedules)) ([#3e5aec1](https://github.com/eyewitness/eye/commit/3e5aec1b5c1268582339c384f5e97dfa4be688c6))
