@@ -56,8 +56,13 @@ This is the last and easy bit - simply place your monitoring logic into the `run
 ```diff
 public function run()
 {
-- //
-+ // place your PHP logic here
+- return true;
++ // Place any PHP logic you want here
++ if (SpotifyApi::isOnline()) {
++     return true;
++ } else {
++     return false;
++ }
 }
 ```
 
@@ -68,10 +73,20 @@ Sometimes just knowing if a monitor is "up" or "down" is not enough. Using our S
 To include a value in your monitor - simply include the following somewhere inside of your `run()` command:
 
 ```diff
-+ $this->setValue(5);
+public function run()
+{
+- return true;
++ // Place any PHP logic you want here
++ $this->setValue(SpotifyApi::getResponseTime());
++ if (SpotifyApi::isOnline()) {
++     return true;
++ } else {
++     return false;
++ }
+}
 ```
 
-We've used `5` as an example here - but you can place any `numeric` number there.
+You can place any `numeric` number inside of `setValue()`.
 
 
 ## Registering a custom monitor to Eyewitness

@@ -1,5 +1,24 @@
 # Changelog
 
+## 3.0.0-beta8 - 11th June 2018
+
+### Changed
+- Sonar queue checking will no longer artifically inflate the queue counter ([#1623d55](https://github.com/eyewitness/eye/commit/1623d55b9cb364d472458f259004d7f457d0e3cc))
+- Improve custom monitor graphs to not include null values ([#12de88b](https://github.com/eyewitness/eye/commit/12de88be5f14be4544c6ad6b73ced88a588d6c67))
+
+### Fixed
+- Fixed bug with disabled logins and custom authentication ([#c50bc25](https://github.com/eyewitness/eye/commit/c50bc25dd9cde5ddb4dc64c59900ab431837db3b))
+- Fixed OnOneServer support ([#dc10cd3](https://github.com/eyewitness/eye/commit/dc10cd3655298351abbf61159bae49062793b6c9))
+
+## 3.0.0-beta7 - 30th May 2018
+
+### Changed
+- Update cron file names to use underscores instead of dashes ([#424d3a8](https://github.com/eyewitness/eye/commit/424d3a8e4b2aaf6bcc253afb172aab7ff37b54e3))
+
+### Fixed
+- Updated SSL check due to unexpected API change ([#34e6a1a](https://github.com/eyewitness/eye/commit/34e6a1a989cd6a578363b58262940bc4861d0d57))
+- Corrected Slack metadata attachment ([#af5f44e](https://github.com/eyewitness/eye/commit/af5f44e51cfe130baba1452ee1e656af29f690b8))
+
 ## 3.0.0-beta6 - 12th May 2018
 
 ***If you are using a previous version of the Eyewitness beta - you must run `php artisan migrate` for this patch to update a table***
