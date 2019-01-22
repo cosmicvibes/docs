@@ -27,12 +27,6 @@ Each database connection can have a size alert if the database goes below a cert
 
 If a database that previously had size problems (small or large) - but they are not resolved, a notification will be sent out.
 
-
-## Configuration
-
-You can read more about configuring your `composer.lock` location [here](configuration\general.md#databases)
-
-
 ## Disabling database monitor
 
 You can disable this monitor by modifying your `config/eyewitness.php` file:
